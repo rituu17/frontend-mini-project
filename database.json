@@ -1,0 +1,74 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "asdf@gmail.com",
+            "password": "something",
+            "mobile": "2345678987654",
+            "cart": [
+                {
+                    "id": 1,
+                    "type": "food",
+                    "quantity": 1
+                },
+                {
+                    "id": 3,
+                    "type": "food",
+                    "quantity": 7
+                },
+                {
+                    "id": 2,
+                    "type": "food",
+                    "quantity": 5
+                }
+            ],
+            "favourites": [
+                {
+                    "id": 1,
+                    "type": "food"
+                },
+                {
+                    "id": 3,
+                    "type": "food"
+                },
+                {
+                    "id": 2,
+                    "type": "food"
+                }
+            ]
+        }
+    ],
+    "menu": [
+        {
+            "food": [{
+                "id":1,
+                "category":"vegeteratian meals",
+                "name":"VEGGIE BURGER",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at gravida lacus. Suspendisse laoreet ultrices ex, quis efficitur justo rhoncus sit amet.",
+                "img-location":"../media/menu/food/breakfast.jpg",
+                "price":"150"
+            },
+            {
+                "id":2,
+                "category":"vegeteratian meals",
+                "name":"COURGETTE CARPACCIO",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at gravida lacus. Suspendisse laoreet ultrices ex, quis efficitur justo rhoncus sit amet.",
+                "img-location":"../media/menu/food/breakfast.jpg",
+                "price":"170"
+            },
+            {
+                "id":3,
+                "category":"vegeteratian meals",
+                "name":"MUSHROOM RISOTTO",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at gravida lacus. Suspendisse laoreet ultrices ex, quis efficitur justo rhoncus sit amet.",
+                "img-location":"../media/menu/food/breakfast.jpg",
+                "price":"210"
+            }]
+        },
+        {
+            "desserts":[]
+        },{
+            "drinks":[]
+        }
+    ]
+}
