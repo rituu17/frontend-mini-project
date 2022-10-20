@@ -3,18 +3,18 @@ use miniprojecttwo;
 
 -------------------------------------------------------------------------------------------------------- 
  -- Roles table  
-create table roles (roll_id int not null auto_increment , roll_name varchar(255), primary key (roll_id));
-insert into roles (roll_name) values ('Admin');
-insert into roles (roll_name) values ('Doctor');
-insert into roles (roll_name) values ('Patient');
-insert into roles (roll_name) values ('Nurse');
-insert into roles (roll_name) values('Receptionist');
+create table roles (role_id int not null auto_increment , role_name varchar(255), primary key (role_id));
+insert into roles (role_name) values ('Admin');
+insert into roles (role_name) values ('Doctor');
+insert into roles (role_name) values ('Patient');
+insert into roles (role_name) values ('Nurse');
+insert into roles (role_name) values('Receptionist');
 select * from roles;
 
 --------------------------------------------------------------------------------------------------------
 -- Users table
 create table users ( 
-user_id bigint not null auto_increment, roll_id int not null, firstname varchar(255) not null, 
+user_id bigint not null auto_increment, role_id int not null, firstname varchar(255) not null, 
 lastname varchar(255) not null, email varchar(255) not null, mobile bigint not null,
 password varchar(255) not null, active int not null,  profile_url varchar(255),
 city varchar(100), primary key (user_id) );
